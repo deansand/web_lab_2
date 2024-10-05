@@ -30,7 +30,7 @@ main .main-intro button {
 }
 
 .index-category-box {
-    width: 570px;
+    /*width: 570px;*/
     height: 160px;
     background-color: #FCDDD4;
     margin-top: 20%;
@@ -115,24 +115,34 @@ img {
     text-align: left;
 }
 
-.wrapper2 img {
-    max-width: 575.11px;
-    max-height: 480px;
-    float: left;
-}
+@media (min-width: 1024px) {
+  .wrapper2 img 
+      max-width: 575.11px;
+      max-height: 480px;
+      float: left;
+  }
+
 
 /*category boxes*/
 
-.index-category3 {
+@media screen and (min-width: 480px) {
+  .index-category3 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FEF8F5;
+    column-gap: 20px;
+  }
+
+  .index-category3 {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #FEF8F5;
     column-gap: 20px;
-}
+  }
 
 .index-category-box3 {
-    width: 420px;
     height: 360px;
     background-color: #FFFFFF;
 }
