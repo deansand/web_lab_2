@@ -1,0 +1,34 @@
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+header {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.main-intro h1 {
+  animation: slideIn 1s ease-in-out;
+}
+
+.cta button {
+  transition: background-color 0.3s ease;
+}
+
+.cta button:hover {
+  background-color: #0056b3;
+}
